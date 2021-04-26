@@ -1,0 +1,46 @@
+h1
+{
+color: DarkRed;
+}
+
+
+
+.faceoverlap
+{
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+.facecontainer
+{
+position: relative;
+height: 250px;
+width: 250px;
+margin:auto;
+}
+
+.gallery
+{
+width:100%;
+height:auto;
+border:1px solid green;
+overflow:scroll;
+float:left;
+margin:2px;
+}
+.gallery-item
+{
+position: relative;
+height: 50px;
+width: 50px;
+
+margin: 20px;
+}
+
+.gallery-item:hover
+{
+
+background:white;
+
+}

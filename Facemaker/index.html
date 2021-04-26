@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Heart Face Page</title>
+<link rel="stylesheet" href="css/main.css">
+
+
+<!-- bootstrap 4 linking-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+    <h1>The Cute Emoji Creater</h1>
+    <p>Create your Crazy Emoji</p> 
+
+<nav class="navbar navbar-expand-sm justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>  
+</div>
+
+<div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-6" style="background-color:lavender;">
+
+        <div class="container">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Faces</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="gallery" id="face_blank">
+                        <img class="gallery-item" src="images/face/1.png" onclick="updateitem('face',this.src);">
+                        <img class="gallery-item" src="images/face/2.png" onclick="updateitem('face',this.src);">
+                        <img class="gallery-item" src="images/face/3.png" onclick="updateitem('face',this.src);">
+                        <img class="gallery-item" src="images/face/4.png" onclick="updateitem('face',this.src);">
+                    </div>    
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Eyes</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="gallery" id="eye_blank">
+                        <img class="gallery-item" src="images/eye/1.png" onclick="updateitem('eye',this.src);">
+                        <img class="gallery-item" src="images/eye/2.png" onclick="updateitem('eye',this.src);">
+                        <img class="gallery-item" src="images/eye/3.png" onclick="updateitem('eye',this.src);">
+                        <img class="gallery-item" src="images/eye/4.png" onclick="updateitem('eye',this.src);">
+                    </div>
+                    </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Nose</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="gallery" id="nose_blank">
+                        <img class="gallery-item" src="images/nose/1.png" onclick="updateitem('nose',this.src);">
+                        <img class="gallery-item" src="images/nose/2.png" onclick="updateitem('nose',this.src);">
+                        <img class="gallery-item" src="images/nose/3.png" onclick="updateitem('nose',this.src);">
+                        <img class="gallery-item" src="images/nose/4.png" onclick="updateitem('nose',this.src);">
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Mouth</a>
+                  </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="gallery" id="mouth_blank">
+                        <img class="gallery-item" src="images/mouth/1.png" onclick="updateitem('mouth',this.src);">
+                        <img class="gallery-item" src="images/mouth/2.png" onclick="updateitem('mouth',this.src);">
+                        <img class="gallery-item" src="images/mouth/3.png" onclick="updateitem('mouth',this.src);">
+                        <img class="gallery-item" src="images/mouth/4.png" onclick="updateitem('mouth',this.src);">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Hair</a>
+                  </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <div class="gallery" id="hair_blank">
+                        <img class="gallery-item" src="images/hair/1.png" onclick="updateitem('hair',this.src);">
+                        <img class="gallery-item" src="images/hair/2.png" onclick="updateitem('hair',this.src);">
+                    <!--
+                        <img class="gallery-item" src="images/hair/3.png" onclick="updateitem('hair',this.src);">
+                        <img class="gallery-item" src="images/hair/4.png" onclick="updateitem('hair',this.src);">
+                    -->    
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div> 
+        </div>
+        
+     </div>
+      <div class="col-sm-6" style="background-color:lavenderblush;">
+            <div class="facecontainer" id="capture">
+            <img id="face" class="faceoverlap" src="images/face/3.png">
+            <img id="eye" class="faceoverlap" src="images/eye/1.png">
+            <img id="nose" class="faceoverlap" src="images/nose/1.png">
+            <img id="mouth" class="faceoverlap" src="images/mouth/2.png">
+            <img id="hair" class="faceoverlap" src="images/hair/1.png">
+            </div>
+            <button onclick="doCapture();">Capture</button>
+        </div>
+    </div>
+  </div>
+  
+     
+
+
+<script>
+
+function doCapture() {
+   
+    var container = document.getElementById("capture");; // full page 
+		html2canvas(container,{allowTaint : true}).then(function(canvas) {
+		
+			var link = document.createElement("a");
+			document.body.appendChild(link);
+			link.download = "html_image.png";
+			link.href = canvas.toDataURL("image/png");
+			link.target = '_blank';
+			link.click();
+		});
+  
+
+} 
+
+function update(x,y)
+{
+    y="images/"+x+"/"+y;
+   alert(y);
+    document.getElementById(x).src=y;
+
+}
+
+function updateitem(x,y)
+{
+    document.getElementById(x).src=y;
+}
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
